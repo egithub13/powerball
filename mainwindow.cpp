@@ -23,9 +23,13 @@ MainWindow::MainWindow(QWidget *parent)
     ui->btnPB->setFixedSize(48, 48);
     ui->btnSubmit->setFixedSize(200, 32);
 
-    // Signals and Slots
-
-
+    // Clear Values
+    ui->btn1->setText("L");
+    ui->btn2->setText("E");
+    ui->btn3->setText("T");
+    ui->btn4->setText("S");
+    ui->btn5->setText("G");
+    ui->btnPB->setText("O");
 
     this->setStyleSheet(
         " QPushButton[type=\"primary\"] {"
