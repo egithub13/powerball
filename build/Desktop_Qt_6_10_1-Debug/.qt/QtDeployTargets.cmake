@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_HelloUser_FILE /home/ehayes/HelloUser/build/Desktop_Qt_6_10_1-Debug/HelloUser)
+set(__QT_DEPLOY_TARGET_HelloUser_TYPE EXECUTABLE)

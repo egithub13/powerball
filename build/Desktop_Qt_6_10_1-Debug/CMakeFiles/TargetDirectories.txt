@@ -1,0 +1,9 @@
+/home/ehayes/HelloUser/build/Desktop_Qt_6_10_1-Debug/CMakeFiles/HelloUser.dir
+/home/ehayes/HelloUser/build/Desktop_Qt_6_10_1-Debug/CMakeFiles/edit_cache.dir
+/home/ehayes/HelloUser/build/Desktop_Qt_6_10_1-Debug/CMakeFiles/rebuild_cache.dir
+/home/ehayes/HelloUser/build/Desktop_Qt_6_10_1-Debug/CMakeFiles/list_install_components.dir
+/home/ehayes/HelloUser/build/Desktop_Qt_6_10_1-Debug/CMakeFiles/install.dir
+/home/ehayes/HelloUser/build/Desktop_Qt_6_10_1-Debug/CMakeFiles/install/local.dir
+/home/ehayes/HelloUser/build/Desktop_Qt_6_10_1-Debug/CMakeFiles/install/strip.dir
+/home/ehayes/HelloUser/build/Desktop_Qt_6_10_1-Debug/CMakeFiles/HelloUser_autogen_timestamp_deps.dir
+/home/ehayes/HelloUser/build/Desktop_Qt_6_10_1-Debug/CMakeFiles/HelloUser_autogen.dir
