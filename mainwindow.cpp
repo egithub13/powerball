@@ -9,55 +9,16 @@
 #define MRANGE      70
 #define MBALL       25
 
+void configureWidgets(Ui::MainWindow *ui);
+void configureStyleSheets(QWidget *q);
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    // Make button square
-    ui->btn1->setFixedSize(48, 48);
-    ui->btn2->setFixedSize(48, 48);
-    ui->btn3->setFixedSize(48, 48);
-    ui->btn4->setFixedSize(48, 48);
-    ui->btn5->setFixedSize(48, 48);
-    ui->btnPB->setFixedSize(48, 48);
-    ui->btnSubmit->setFixedSize(200, 32);
-
-    // Clear Values
-    ui->btn1->setText("L");
-    ui->btn2->setText("E");
-    ui->btn3->setText("T");
-    ui->btn4->setText("S");
-    ui->btn5->setText("G");
-    ui->btnPB->setText("O");
-
-    this->setStyleSheet(
-        " QPushButton[type=\"primary\"] {"
-        " background-color:#2979FF;"
-        " color:white;"
-        " border-radius:24px;"
-        " padding:8px 16px;"
-        " font-weight: bold;"
-        "}"
-        "QPushButton[type=\"danger\"] {"
-        " background-color:#D32F2F;"
-        " color:white;"
-        " border-radius:24px;"
-        " padding:8px 16px;"
-        " font-weight: bold;"
-        "}"
-        "QPushButton[type=\"submit\"] {"
-        " background-color:#2E7D32;"   /* green */
-        " color:white;"
-        " border-radius:12px;"
-        " font-weight:bold;"
-        " padding:8px 16px;"
-        "}"
-        "QPushButton[type=\"submit\"]:hover {"
-        " background-color:#1B5E20;"
-        "}"
-    );
-
+    configureWidgets(ui);
+    configureStyleSheets(this);
 }
 
 MainWindow::~MainWindow()
@@ -94,6 +55,54 @@ int MainWindow::rand_generator(int range)
     std::uniform_int_distribution<int> dist(1, range);
 
     return dist(gen);
+}
+
+void configureWidgets(Ui::MainWindow *ui) {
+    // Make button square
+    ui->btn1->setFixedSize(48, 48);
+    ui->btn2->setFixedSize(48, 48);
+    ui->btn3->setFixedSize(48, 48);
+    ui->btn4->setFixedSize(48, 48);
+    ui->btn5->setFixedSize(48, 48);
+    ui->btnPB->setFixedSize(48, 48);
+    ui->btnSubmit->setFixedSize(200, 32);
+
+    // Clear Values
+    ui->btn1->setText("L");
+    ui->btn2->setText("E");
+    ui->btn3->setText("T");
+    ui->btn4->setText("S");
+    ui->btn5->setText("G");
+    ui->btnPB->setText("O");
+}
+
+void configureStyleSheets(QWidget *p) {
+    p->setStyleSheet(
+        " QPushButton[type=\"primary\"] {"
+        " background-color:#2979FF;"
+        " color:white;"
+        " border-radius:24px;"
+        " padding:8px 16px;"
+        " font-weight: bold;"
+        "}"
+        "QPushButton[type=\"danger\"] {"
+        " background-color:#D32F2F;"
+        " color:white;"
+        " border-radius:24px;"
+        " padding:8px 16px;"
+        " font-weight: bold;"
+        "}"
+        "QPushButton[type=\"submit\"] {"
+        " background-color:#2E7D32;"   /* green */
+        " color:white;"
+        " border-radius:12px;"
+        " font-weight:bold;"
+        " padding:8px 16px;"
+        "}"
+        "QPushButton[type=\"submit\"]:hover {"
+        " background-color:#1B5E20;"
+        "}"
+    );
 }
 
 
